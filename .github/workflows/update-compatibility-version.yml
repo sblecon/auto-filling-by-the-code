@@ -1,8 +1,9 @@
 name: CI
 
-on: [push]
-  paths:
-    - 'compatibility-versions.json'
+on: 
+  push:
+    paths:
+      - 'compatibility-versions.json'
 
 jobs:
   build:
