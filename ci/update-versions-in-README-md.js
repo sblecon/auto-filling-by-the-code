@@ -2,9 +2,9 @@
 
 const fs = require('fs');
 
-let rawDataVersion = fs.readFileSync('../compatibility-versions.json');
+let rawDataVersion = fs.readFileSync(__dirname + '/../compatibility-versions.json');
 let versions = JSON.parse(rawDataVersion);
-let readme = fs.readFileSync('../README.md').toString('utf8');
+let readme = fs.readFileSync(__dirname + '/../README.md').toString('utf8');
 console.log(versions);
 let lines = readme.split(/\r\n|\n|\r/);
 let blockToReplace = false;
@@ -38,4 +38,4 @@ for (let i=0;i < lines.length;i++) {
 if (blockToReplace) {
     newReadme += '\n' + generateTheTable();
 }
-fs.writeFileSync('../README.md', newReadme)
+fs.writeFileSync(__dirname + '/../README.md', newReadme)
