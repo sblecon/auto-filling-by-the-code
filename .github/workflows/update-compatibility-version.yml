@@ -2,25 +2,23 @@ name: CI
 
 on: 
   push:
-#    paths:
-#      - 'compatibility-versions.json'
+    paths:
+      - 'compatibility-versions.json'
     branches:
       - 'master'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
- #   - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - uses: actions/checkout@v1
+    - name: Use Node.js 11.12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 11.12
+    - name: Update the README.md
+      run: node ci/update-versions-in-README-md.js
+    - name: Commit and Push the updated README.md
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - name: Run a lst
-      run: |
-        ls
-        git push --force --quiet "https://${GH_TOKEN}@github.com/qmk_configurator" master:gh-pages > /dev/null 2>&1
+        git commit -m "Update README.md on updated compatibility versions"
+        git push --force --quiet "https://${GH_TOKEN}@github.com/sblecon/auto-filling-by-the-code" master:master > /dev/null 2>&1

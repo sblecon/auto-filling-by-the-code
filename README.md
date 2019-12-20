@@ -3,6 +3,7 @@ The purpose of this project consists in filling a table in the Readme.md by a Gi
 
 
 # This is the table updated by the script
+
 |Project version|Component A version|Component B version|Component C version|
 |---|---|---|---|
 |1.0|2.8|3.4|5.8|
