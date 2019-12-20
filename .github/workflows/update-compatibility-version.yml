@@ -2,8 +2,8 @@ name: CI
 
 on: 
   push:
-#    paths:
-#      - 'compatibility-versions.json'
+    paths:
+      - 'compatibility-versions.json'
     branches:
       - 'master'
 
