@@ -1,0 +1,20 @@
+[
+    {
+        "projectVersion": "1.0",
+        "componentAVersion": "2.8",
+        "componentBVersion": "3.4",
+        "componentCVersion": "5.8"  
+    },
+    {
+        "projectVersion": "1.1",
+        "componentAVersion": "2.9",
+        "componentBVersion": "3.7",
+        "componentCVersion": "5.8"  
+    },
+    {
+        "projectVersion": "2.0",
+        "componentAVersion": "2.9",
+        "componentBVersion": "4.4",
+        "componentCVersion": "6.1"  
+    }
+]
