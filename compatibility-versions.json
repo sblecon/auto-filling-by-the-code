@@ -16,5 +16,12 @@
         "componentAVersion": "2.9",
         "componentBVersion": "4.4",
         "componentCVersion": "6.5"  
+    },
+    {
+        "projectVersion": "2.1",
+        "componentAVersion": "3.9",
+        "componentBVersion": "4.5",
+        "componentCVersion": "6.8"  
     }
+
 ]
