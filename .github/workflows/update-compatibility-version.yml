@@ -1,6 +1,8 @@
 name: CI
 
 on: [push]
+paths:
+  - 'compatibility-versions.json'
 
 jobs:
   build:
@@ -15,3 +17,6 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: Run a lst
+    run: |
+      ls
