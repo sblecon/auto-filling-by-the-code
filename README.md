@@ -1,7 +1,7 @@
 
 
 # auto-filling-by-the-code
-The purpose of this project consists in filling a table in the Readme.md by a Github action based on a JSON file updated
+The purpose of this project consists in filling a table in the Readme.md by a Github action based on a JSON file updated.
 
 
 # This is the table updated by the script
