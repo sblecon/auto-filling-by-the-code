@@ -22,12 +22,11 @@
         "componentAVersion": "3.9",
         "componentBVersion": "4.5",
         "componentCVersion": "6.8"  
-    }
+    },
     {
         "projectVersion": "2.5",
         "componentAVersion": "5.9",
         "componentBVersion": "5.5",
         "componentCVersion": "7.8"  
     }
-
 ]
