@@ -1,0 +1,27 @@
+name: CI
+
+on: 
+  push:
+    paths:
+      - 'compatibility-versions.json'
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js 11.12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 11.12
+    - name: Update the README.md
+      run: node ci/update-versions-in-README-md.js
+    - name: Commit and Push the updated README.md
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git commit -m "Update README.md on updated compatibility versions"
+        git push --force --quiet "https://${GH_TOKEN}@github.com/antoine-gannat/auto-filling-by-the-code" master:master > /dev/null 2>&1
