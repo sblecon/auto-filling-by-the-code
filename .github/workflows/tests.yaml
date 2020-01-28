@@ -18,10 +18,3 @@ jobs:
         with:
           version_file_path: '__tests__/compatibility-versions.json'
           readme_path: '__tests__/README.md'
-      - name: Commit and Push the updated README.md
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add __tests__/README.md
-          git commit -m "Test to update __tests__/README.md"
-          git push --force --quiet "https://${GH_TOKEN}@github.com/antoine-gannat/auto-filling-by-the-code" master:master > /dev/null 2>&1
