@@ -24,4 +24,4 @@ jobs:
         git config --local user.name "GitHub Action"
         git add README.md
         git commit -m "Update README.md on updated compatibility versions"
-        git push --force --quiet "https://${GH_TOKEN}@github.com/sblecon/auto-filling-by-the-code" master:master > /dev/null 2>&1
+        git push --force --quiet "https://${GH_TOKEN}@github.com/antoine-gannat/auto-filling-by-the-code" master:master > /dev/null 2>&1
