@@ -1,5 +1,7 @@
 FROM node:12-alpine
 
+WORKDIR /actions/compatibility-table-updater
+
 # copy the package* files
 COPY package*.json ./
 
@@ -10,4 +12,4 @@ RUN npm i
 
 COPY . .
 
-CMD [ "node", "main.js" ]
+CMD [ "node", "/actions/compatibility-table-updater/main.js" ]
