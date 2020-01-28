@@ -116,5 +116,8 @@ function replaceCurrentTable(){
 
 // replace the current table by a new one
 replaceCurrentTable();
+
+// display the result
+console.log("result:", readme)
 // Write over to the readme file
-fs.writeFileSync(__dirname + '/../README.md', readme)
+fs.writeFileSync(path.join('/github/workspace/', core.getInput('readme_path')), readme)
