@@ -1,7 +1,5 @@
 FROM node:12-alpine
 
-WORKDIR /app
-
 # copy the package* files
 COPY package*.json ./
 
