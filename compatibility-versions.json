@@ -26,6 +26,11 @@
         "ComponentC": "6.8"  
     },
     {
+        "Project": "2.2",
+        "ComponentB": "4.5",
+        "ComponentC": "6.8"  
+    },
+    {
         "Project": "2.5",
         "ComponentA": "5.9",
         "ComponentB": "5.5",
