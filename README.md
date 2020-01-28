@@ -45,7 +45,7 @@ The versions are loaded from a JSON file, by default ``compatibility-versions.js
 
 # JSON file
 
-Here is an example of ``compatibility-versions.json``
+Here is an example of the JSON file used ealier
 
     [
         {
