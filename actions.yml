@@ -1,0 +1,12 @@
+name: 'Readme compatibility table updater'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+version_file_path:
+  description: 'File containing the versions compatibility'
+  required: false
+  default: 'compatibility-versions.json'
+readme_path:
+  description: 'The Readme.md file to update'
+  required: false
+  default: 'README.md'
