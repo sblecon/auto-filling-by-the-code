@@ -79,14 +79,14 @@ function generateTheTable() {
 // find the current version table in the readme file, and replace it by the new one
 function replaceCurrentTable(){
     // line used to identify the position of the table
-    const tableTitle = '# Compatibility table';
+    const tableTitle = core.getInput('section_title');
     // search the line where the compatibility table title is present
     const tableTitleIndex = lines.findIndex((l) => l.indexOf(tableTitle) >= 0);
 
     // if the line is not found, add at the bottom of the file
     if (tableTitleIndex < 0){
         // add the title
-        readme += '\n# Compatibility table\n';
+        readme += '\n' + core.getInput('section_title') + '\n';
         // add the table (joined by line breaks)
         readme += generateTheTable().join('\n');
         return;

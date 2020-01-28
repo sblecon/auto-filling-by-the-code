@@ -11,6 +11,7 @@ The versions are loaded from a JSON file, by default ``compatibility-versions.js
 
 - **version_file_path**: Path to the JSON file containing the versions of your components
 - **readme_path**: Path of the readme file to update
+- **section_title**: Name of the section containing the table (example: '# Compatibility table')
 
 **Note:** These path are relative to the root of your Github repository 
 

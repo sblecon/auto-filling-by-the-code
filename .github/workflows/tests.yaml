@@ -12,5 +12,6 @@ jobs:
         with:
           version_file_path: '__tests__/compatibility-versions.json'
           readme_path: '__tests__/README.md'
+          section_title: '# Compatibility table'
       - name: Verify changes
         run: if [ $(git diff __tests__/README.md | wc -c) -eq 0 ]; then exit 1; fi

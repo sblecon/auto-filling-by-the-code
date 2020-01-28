@@ -10,3 +10,6 @@ readme_path:
   description: 'The Readme.md file to update'
   required: false
   default: 'README.md'
+section_title:
+  description: 'Name of the section that contain the markdown table (ex: # Compatibility table)'
+  required: true
