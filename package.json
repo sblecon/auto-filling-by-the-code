@@ -1,0 +1,22 @@
+{
+  "name": "compatibility-table-updater",
+  "version": "1.0.0",
+  "description": "Update a compatibility table in the readme.md from a .json file",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoine-gannat/auto-filling-by-the-code.git"
+  },
+  "author": "Antoine GANNAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoine-gannat/auto-filling-by-the-code/issues"
+  },
+  "homepage": "https://github.com/antoine-gannat/auto-filling-by-the-code#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.2"
+  }
+}

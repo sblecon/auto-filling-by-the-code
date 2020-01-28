@@ -1,11 +1,13 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
+const core = require('@actions/core');
 
 // get the versions file and parse it to JSON
-let versions = JSON.parse(fs.readFileSync(__dirname + '/../compatibility-versions.json'));
+let versions = JSON.parse(fs.readFileSync(path.join(__dirname, core.getInput('version_file_path'))));
 // get the readme file
-let readme = fs.readFileSync(__dirname + '/../README.md').toString('utf8');
+let readme = fs.readFileSync(path.join(__dirname, core.getInput('readme_path'))).toString('utf8');
 // parse the file to lines
 let lines = readme.split(/\r\n|\n|\r/);
 
