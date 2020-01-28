@@ -1,5 +1,5 @@
 # auto-filling-by-the-code
-![tests](https://github.com/antoine-gannat/auto-filling-by-the-code/workflows/tests/badge.svg)
+![tests](https://github.com/sblecon/auto-filling-by-the-code/workflows/tests/badge.svg)
 
 The purpose of this project is to fill a compatibility table showing the compatibility between a project and its dependencies.
 
@@ -30,7 +30,7 @@ The versions are loaded from a JSON file, by default ``compatibility-versions.js
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@master
-        - uses: antoine-gannat/auto-filling-by-the-code@master
+        - uses: sblecon/auto-filling-by-the-code@master
         with:
             version_file_path: 'compatibility-versions.json'
             readme_path: 'README.md'
