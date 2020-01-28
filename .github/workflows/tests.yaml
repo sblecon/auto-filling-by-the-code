@@ -22,6 +22,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Update README.md on updated compatibility versions"
+          git add __tests__/README.md
+          git commit -m "Test to update __tests__/README.md"
           git push --force --quiet "https://${GH_TOKEN}@github.com/antoine-gannat/auto-filling-by-the-code" master:master > /dev/null 2>&1
