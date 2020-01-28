@@ -5,9 +5,9 @@ const path = require('path');
 const core = require('@actions/core');
 
 // get the versions file and parse it to JSON
-let versions = JSON.parse(fs.readFileSync(path.join(__dirname, core.getInput('version_file_path'))));
+let versions = JSON.parse(fs.readFileSync(path.join('/github/workspace/', core.getInput('version_file_path'))));
 // get the readme file
-let readme = fs.readFileSync(path.join(__dirname, core.getInput('readme_path'))).toString('utf8');
+let readme = fs.readFileSync(path.join('/github/workspace/', core.getInput('readme_path'))).toString('utf8');
 // parse the file to lines
 let lines = readme.split(/\r\n|\n|\r/);
 
