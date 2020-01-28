@@ -1,5 +1,8 @@
 FROM node:12-alpine
 
+# set the workdir
+WORKDIR /github/workspace
+
 # copy the package* files
 COPY package*.json ./
 
