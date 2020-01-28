@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Update readme.md
-        uses: antoine-gannat/auto-filling-by-the-code@1.0.0
+      - name: Update readme.md 
+        uses: ./
         with:
           version_file_path: '__tests__/compatibility-versions.json'
           readme_path: '__tests__/README.md'
-      - name: My backup step
+      - name: Update readme.md backup
         if: failure()
-        uses: ./
+        uses: antoine-gannat/auto-filling-by-the-code@1.0.0
         with:
           version_file_path: '__tests__/compatibility-versions.json'
           readme_path: '__tests__/README.md'

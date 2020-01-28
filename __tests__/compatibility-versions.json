@@ -34,6 +34,12 @@
         "Project": "2.5",
         "ComponentA": "5.9",
         "ComponentB": "5.5",
-        "ComponentC": "7.8"  
+        "ComponentC": "7.8"
+    },
+    {
+        "Project": "2.6",
+        "ComponentA": "5.9",
+        "ComponentB": "5.5",
+        "ComponentC": "7.8"
     }
 ]
