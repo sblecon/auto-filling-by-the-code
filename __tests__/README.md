@@ -8,7 +8,7 @@ blablabla text blabla
 
 |Project version|ComponentA version|ComponentB version|ComponentC version|ComponentE version|ComponentD version|
 |---|---|---|---|---|---|
-|1.0|2.7|3.4|5.8|-|-|
+|1.0|-|-|-|-|-|
 |1.1|2.9|3.7|5.8|0.1|-|
 |2.0|2.9|4.4|6.5|-|8.1|
 |2.1|3.9|4.5|6.8|-|-|
