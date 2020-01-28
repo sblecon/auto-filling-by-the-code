@@ -3,9 +3,18 @@
 
 The purpose of this project is to fill a compatibility table showing the compatibility between a project and its dependencies.
 
-The versions are loaded from a JSON file : ``compatibility-versions.json``
+The versions are loaded from a JSON file, by default ``compatibility-versions.json``
 
 # Usage in a workflow
+
+## Inputs
+
+- version_file_path: Path to the JSON file containing the versions of your components
+- readme_path: Path of the readme file to update
+
+**Note:** These path are relative to the root of your Github repository 
+
+## Full example
 
     name: Update Readme
 
@@ -32,7 +41,6 @@ The versions are loaded from a JSON file : ``compatibility-versions.json``
             git add README.md
             git commit -m "Update README.md compatibility table"
             git push "https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}" master:master
-
 
 
 # JSON file
