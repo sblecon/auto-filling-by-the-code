@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/antoine-gannat/auto-filling-by-the-code#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/core": "^1.9.1"
   }
 }
